@@ -1,0 +1,68 @@
+{
+    "insurances": [
+                   {
+                   "id": "2",
+                   "imageURL": "heart.png",
+                   "name": "Suzy Sunshine",
+                   "type": "Health",
+                   "backgroundImage": "blueGradient.png"
+                   },
+                   {
+                   "id": "19",
+                   "imageURL": "heart.png",
+                   "name": "Sam Sunshine",
+                   "type": "Health",
+                   "backgroundImage": "blueGradient.png"
+                   },
+                   {
+                   "id": "39",
+                   "imageURL": "heart.png",
+                   "name": "Sean Sunshine",
+                   "type": "Health",
+                   "backgroundImage": "blueGradient.png"
+                   },
+                   {
+                   "id": "29",
+                   "imageURL": "heart.png",
+                   "name": "Sally Sunshine",
+                   "type": "Health",
+                   "backgroundImage": "blueGradient.png"
+                   },
+                   {
+                   "id": "3",
+                   "imageURL": "",
+                   "type": "Auto",
+                   "backgroundImage": "orangeGradient.png"
+                   },
+                   {
+                   "id": "3",
+                   "imageURL": "",
+                   "type": "Auto",
+                   "backgroundImage": "orangeGradient.png"
+                   },
+                   {
+                   "id": "4",
+                   "imageURL": "",
+                   "type": "Dental",
+                   "backgroundImage": "purpleGradient.png"
+                   },
+                   {
+                   "id": "5",
+                   "imageURL": "",
+                   "type": "Vision",
+                   "backgroundImage": "greenGradient.png"
+                   },
+                   {
+                   "id": "6",
+                   "imageURL": "",
+                   "type": "Home",
+                   "backgroundImage": "yellowGradient.png"
+                   },
+                   {
+                   "id": "16",
+                   "imageURL": "",
+                   "type": "Life",
+                   "backgroundImage": "redGradient.png"
+                   }
+                   ]
+}

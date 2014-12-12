@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA8EA961-DA42-4E90-B801-55FD4A31EA94</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CollectionView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>41CA5D19B2530B6C4A64863372CE3EE58266CAF9</key>
+		<string>github.com:marinfischer/CollectionView-Example.git</string>
+		<key>ADDAFD924EE409FA21CDC8B09DF039AA0C2F0A8E</key>
+		<string>github.com:marinfischer/ColectionViewAnimation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CollectionView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>41CA5D19B2530B6C4A64863372CE3EE58266CAF9</key>
+		<string>../../../CollectionView</string>
+		<key>ADDAFD924EE409FA21CDC8B09DF039AA0C2F0A8E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:marinfischer/ColectionViewAnimation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADDAFD924EE409FA21CDC8B09DF039AA0C2F0A8E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>41CA5D19B2530B6C4A64863372CE3EE58266CAF9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CollectionView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ADDAFD924EE409FA21CDC8B09DF039AA0C2F0A8E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CollectionViewAnamation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

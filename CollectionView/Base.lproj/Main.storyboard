@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qk9-MN-eGx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPz-I0-j8B">
+                                <rect key="frame" x="16" y="20" width="57" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="the card here" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3H5-oP-UHt">
+                                <rect key="frame" x="81" y="16" width="503" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TtG-ML-m6k"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-Ea-eBt">
+                                <rect key="frame" x="16" y="48" width="568" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="sfs-Lk-ecl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wqc-Ea-eBt" firstAttribute="top" secondItem="jPz-I0-j8B" secondAttribute="bottom" constant="7" id="3GY-gD-WvP"/>
+                            <constraint firstItem="3H5-oP-UHt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5x5-UJ-cll"/>
+                            <constraint firstItem="jPz-I0-j8B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7fb-4h-pZj"/>
+                            <constraint firstItem="Wqc-Ea-eBt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FSH-T8-D61"/>
+                            <constraint firstItem="Wqc-Ea-eBt" firstAttribute="top" secondItem="3H5-oP-UHt" secondAttribute="bottom" constant="2" id="IlE-Xd-LKg"/>
+                            <constraint firstItem="Wqc-Ea-eBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="My2-8G-jGy"/>
+                            <constraint firstItem="jPz-I0-j8B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="N90-gO-Wh1"/>
+                            <constraint firstItem="3H5-oP-UHt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="16" id="SaJ-ew-DL7"/>
+                            <constraint firstItem="Wqc-Ea-eBt" firstAttribute="top" secondItem="3H5-oP-UHt" secondAttribute="bottom" constant="2" id="XCV-7o-Pkt"/>
+                            <constraint firstItem="3H5-oP-UHt" firstAttribute="leading" secondItem="jPz-I0-j8B" secondAttribute="trailing" constant="8" id="zVH-vd-FLG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="3H5-oP-UHt" id="i3S-qs-ILM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="1290"/>
+        </scene>
+        <!--Cards Collection View Controller-->
+        <scene sceneID="CBn-DI-v9v">
+            <objects>
+                <collectionViewController storyboardIdentifier="CardsCollectionViewController" id="9JH-TS-RhO" customClass="CardsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nqr-tX-iCH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="pEe-JH-j7v" customClass="CardLayoutView"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="6lA-fC-dk2" customClass="CardCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="9JH-TS-RhO" id="cLc-Eu-aMd"/>
+                            <outlet property="delegate" destination="9JH-TS-RhO" id="wDB-1h-2kE"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="u3Q-n4-EJW"/>
+                    <connections>
+                        <outlet property="cardLayoutView" destination="pEe-JH-j7v" id="vHT-Oz-8Ex"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02B-vI-Mp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="991"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KHC-7f-dU5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qk9-MN-eGx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JMp-4l-mBd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9JH-TS-RhO" kind="relationship" relationship="rootViewController" id="MSj-DU-RgZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahJ-YR-hSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="991"/>
+        </scene>
+    </scenes>
+</document>
