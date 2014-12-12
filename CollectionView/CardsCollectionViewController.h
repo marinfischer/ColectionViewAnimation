@@ -16,6 +16,7 @@
 static NSString * const CardCellIdentifier = @"cardCell";
 
 @interface CardsCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (strong, nonatomic) CardLayoutView *cardLayoutView;
-
+//@property (strong, nonatomic) CardLayoutView *cardLayoutView;
+- (UICollectionViewController *)nextViewControllerAtPoint:(CGPoint)p;
+@property (nonatomic, strong) IBOutlet CardLayoutView *cardLayoutView;
 @end

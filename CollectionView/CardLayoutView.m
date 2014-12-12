@@ -59,8 +59,8 @@ NSString * const CardLayoutInsuranceTypeKind = @"CategoryTitle";
         // ensure that each angle is different enough to be seen
         CGFloat newPercentage = 0.0f;
         do {
-            newPercentage = ((CGFloat)(arc4random() % 220) - 110) * 0.0001f;
-        } while (fabsf(percentage - newPercentage) < 0.006);
+            newPercentage = ((CGFloat)(arc4random() % 220) - 110) * 0.00025f;
+        } while (fabsf(percentage - newPercentage) < 0.009);
         percentage = newPercentage;
         
         CGFloat angle = 2 * M_PI * (1.0f + percentage);

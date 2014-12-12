@@ -14,7 +14,6 @@
 
 @interface CardsCollectionViewController ()
 @property (nonatomic, strong) NSDictionary *categories;
-@property (nonatomic, weak) IBOutlet CardLayoutView *cardCategoryLayout;
 @property (nonatomic, strong) NSArray *cards;
 @property (nonatomic, strong) NSArray *categoryGroupsArray;
 @property (nonatomic, strong) NSArray *healthArray;
@@ -37,18 +36,17 @@ static NSString * const reuseIdentifier = @"Cell";
     [super awakeFromNib];
     LWInsurancesDAO *insurancesDAO = [LWInsurancesDAO new];
     [insurancesDAO loadJSONFile];
-//    self.useLayoutToLayoutNavigationTransitions = false;
 }
 
 //work around for collection view bug when you transition back to this view controller, the z-ordering of the stacked photos may be wrong
 - (void)viewDidAppear:(BOOL)animated
 {
+    [self.collectionView setAlpha:1.0f];
     [super viewDidAppear:animated];
     [[self collectionView] setDelegate:self];
     [[self collectionView] setDataSource:self];
     [self.collectionView reloadData];
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -242,10 +240,18 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.collectionView setAlpha:0.70f];
     
-    if (!self.cardLayoutView) {
-        self.cardLayoutView = [[CardLayoutView alloc] init];
-    }
+//    if (!self.cardLayoutView) {
+//        self.cardLayoutView = [[CardLayoutView alloc] init];
+//    }
+    
+//    CATransition* transition = [CATransition animation];
+//    
+//    transition.duration = 1.0;
+//    transition.type = kCATransitionFade;
+//    
+//    [[self navigationController].view.layer addAnimation:transition forKey:kCATransition];
 }
 
 @end

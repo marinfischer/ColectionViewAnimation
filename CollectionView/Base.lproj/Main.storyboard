@@ -88,7 +88,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="u3Q-n4-EJW"/>
                     <connections>
-                        <outlet property="cardLayoutView" destination="pEe-JH-j7v" id="vHT-Oz-8Ex"/>
+                        <outlet property="cardLayoutView" destination="pEe-JH-j7v" id="oaG-hU-JNE"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02B-vI-Mp6" userLabel="First Responder" sceneMemberID="firstResponder"/>

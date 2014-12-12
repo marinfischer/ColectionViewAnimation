@@ -25,6 +25,7 @@
     // setup our layout and initial collection view
     CardLayoutView *stackLayout = [[CardLayoutView alloc] init];
     CardsCollectionViewController *collectionViewController = [[CardsCollectionViewController alloc] initWithCollectionViewLayout:stackLayout];
+    [collectionViewController setCardLayoutView:stackLayout];
     collectionViewController.title = @"Life Wallet";
     navController.navigationBar.translucent = NO;
     navController.delegate = self;
@@ -37,6 +38,26 @@
     
     // Override point for customization after application launch.
     return YES;
+}
+
+#pragma mark - APLTransitionControllerDelegate
+- (void)interactionBeganAtPoint:(CGPoint)p
+{
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    
+    // Very basic communication between the transition controller and the top view controller
+    // It would be easy to add more control, support pop, push or no-op.
+    //
+    UIViewController *viewController =
+    [(CardsCollectionViewController *)navController.topViewController nextViewControllerAtPoint:p];
+    if (viewController != nil)
+    {
+        [navController pushViewController:viewController animated:YES];
+    }
+    else
+    {
+        [navController popViewControllerAnimated:YES];
+    }
 }
 
 #pragma mark - UINavigationControllerDelegate

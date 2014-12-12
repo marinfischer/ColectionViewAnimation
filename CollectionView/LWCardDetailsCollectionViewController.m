@@ -24,6 +24,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -108,11 +110,15 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void) viewWillDisappear:(BOOL)animated {
     if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+//        [self.collectionView setAlpha:0.8f];
         // Navigation button was pressed. Do some stuff
+//        CATransition* transition = [CATransition animation];
+//        
+//        transition.duration = 0.8;
+//        transition.type = kCATransitionFade;
+//        
+//        [[self navigationController].view.layer addAnimation:transition forKey:kCATransition];
         [self.navigationController popViewControllerAnimated:NO];
-//        [_previousViewControllerReference.collectionView setDelegate:_previousViewControllerReference.delegate];
-//        [_previousViewControllerReference. collectionView setDataSource:_previousViewControllerReference.];
-        
     }
     [super viewWillDisappear:animated];
 }
