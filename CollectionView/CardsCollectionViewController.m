@@ -98,16 +98,6 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -235,23 +225,12 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewWillDisappear:animated];
     
     self.cardLayoutView = nil;
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.collectionView setAlpha:0.70f];
     
-//    if (!self.cardLayoutView) {
-//        self.cardLayoutView = [[CardLayoutView alloc] init];
-//    }
-    
-//    CATransition* transition = [CATransition animation];
-//    
-//    transition.duration = 1.0;
-//    transition.type = kCATransitionFade;
-//    
-//    [[self navigationController].view.layer addAnimation:transition forKey:kCATransition];
 }
 
 @end

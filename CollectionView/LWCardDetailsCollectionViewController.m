@@ -110,15 +110,13 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void) viewWillDisappear:(BOOL)animated {
     if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
-//        [self.collectionView setAlpha:0.8f];
         // Navigation button was pressed. Do some stuff
-//        CATransition* transition = [CATransition animation];
-//        
-//        transition.duration = 0.8;
-//        transition.type = kCATransitionFade;
-//        
-//        [[self navigationController].view.layer addAnimation:transition forKey:kCATransition];
-        [self.navigationController popViewControllerAnimated:NO];
+            CATransition* transition = [CATransition animation];
+        
+            transition.duration = 0.1;
+            transition.type = kCATransitionFade;
+        
+            [[self navigationController].view.layer addAnimation:transition forKey:kCATransition];
     }
     [super viewWillDisappear:animated];
 }
