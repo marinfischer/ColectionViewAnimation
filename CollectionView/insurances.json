@@ -54,13 +54,13 @@
                    },
                    {
                    "id": "6",
-                   "imageURL": "",
+                   "imageURL": "house.png",
                    "type": "Home",
                    "backgroundImage": "yellowGradient.png"
                    },
                    {
                    "id": "16",
-                   "imageURL": "",
+                   "imageURL": "lifeSaver.png",
                    "type": "Life",
                    "backgroundImage": "redGradient.png"
                    }
