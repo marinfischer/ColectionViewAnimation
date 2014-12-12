@@ -71,7 +71,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [cardCell.imageView setImage:[UIImage imageNamed:card.imageURL]];
     [cardCell.backgroundImageView setImage:[UIImage imageNamed:card.backgroundImage]];
     [cardCell.backgroundImageView setClipsToBounds:true];
-    [cardCell.insTypeName setText:card.type];
+    [cardCell.insTypeName setText:card.name];
     [cardCell.insTypeName setTextColor:[UIColor whiteColor]];
     
     return cardCell;
