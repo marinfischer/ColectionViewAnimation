@@ -30,25 +30,25 @@
                    },
                    {
                    "id": "3",
-                   "imageURL": "",
+                   "imageURL": "car.png",
                    "type": "Auto",
                    "backgroundImage": "orangeGradient.png"
                    },
                    {
                    "id": "3",
-                   "imageURL": "",
+                   "imageURL": "car.png",
                    "type": "Auto",
                    "backgroundImage": "orangeGradient.png"
                    },
                    {
                    "id": "4",
-                   "imageURL": "",
+                   "imageURL": "tooth.png",
                    "type": "Dental",
                    "backgroundImage": "purpleGradient.png"
                    },
                    {
                    "id": "5",
-                   "imageURL": "",
+                   "imageURL": "eye.png",
                    "type": "Vision",
                    "backgroundImage": "greenGradient.png"
                    },

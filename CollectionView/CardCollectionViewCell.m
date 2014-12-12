@@ -25,11 +25,7 @@
         self.layer.cornerRadius = 8.0f;
         self.layer.borderColor = [UIColor groupTableViewBackgroundColor].CGColor;
         self.layer.borderWidth = 0.50f;
-//        self.layer.shadowColor = [UIColor blackColor].CGColor;
-//        self.layer.shadowRadius = 3.0f;
-//        self.layer.shadowOffset = CGSizeMake(0.0f, 2.0f);
-//        self.layer.shadowOpacity = 0.5f;
-        
+
         self.layer.rasterizationScale = [UIScreen mainScreen].scale;
         self.layer.shouldRasterize = YES;
         
@@ -40,7 +36,7 @@
         self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
         self.backgroundImageView.clipsToBounds = YES;
 
-        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.origin.x + 30.0f, self.bounds.origin.y, self.bounds.size.width - 60.0f, self.bounds.size.height - 20.0f)];
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.origin.x + 30.0f, self.bounds.origin.y +15.0f, self.bounds.size.width - 60.0f, self.bounds.size.height - 50.0f)];
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         self.imageView.clipsToBounds = YES;
         
