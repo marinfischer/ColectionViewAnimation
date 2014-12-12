@@ -13,4 +13,5 @@
 @property(nonatomic, assign) BOOL useLayoutToLayoutNavigationTransitions;
 @property (nonatomic, strong) NSArray *data;
 @property (nonatomic, strong) CardsCollectionViewController *previousViewControllerReference;
+@property (nonatomic, strong) CardLayoutView *cardLayoutView;
 @end

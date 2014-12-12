@@ -142,6 +142,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
         [test setData:cardItems];
         [test setPreviousViewControllerReference:self];
+        [test setCardLayoutView:self.cardLayoutView];
         [self.navigationController pushViewController:test animated:YES];
     }
     

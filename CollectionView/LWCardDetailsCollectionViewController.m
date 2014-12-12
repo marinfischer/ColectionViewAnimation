@@ -111,6 +111,7 @@ static NSString * const reuseIdentifier = @"Cell";
 -(void) viewWillDisappear:(BOOL)animated {
     if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
         // Navigation button was pressed. Do some stuff
+        [self.previousViewControllerReference setCardLayoutView:self.cardLayoutView];
             CATransition* transition = [CATransition animation];
         
             transition.duration = 0.1;
