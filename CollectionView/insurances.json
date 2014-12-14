@@ -5,64 +5,125 @@
                    "imageURL": "heart.png",
                    "name": "Suzy Sunshine",
                    "type": "Health",
-                   "backgroundImage": "blueGradient.png"
+                   "backgroundImage": "blue.png",
+                   "userImage": "suzy.png"
                    },
                    {
                    "id": "19",
                    "imageURL": "heart.png",
                    "name": "Sam Sunshine",
                    "type": "Health",
-                   "backgroundImage": "blueGradient.png"
+                   "backgroundImage": "blue.png",
+                   "userImage": "sam.png"
                    },
                    {
                    "id": "39",
                    "imageURL": "heart.png",
                    "name": "Sean Sunshine",
                    "type": "Health",
-                   "backgroundImage": "blueGradient.png"
+                   "backgroundImage": "blue.png",
+                   "userImage": "sean.png"
                    },
                    {
                    "id": "29",
                    "imageURL": "heart.png",
+                   "name": "Shane Sunshine",
+                   "type": "Health",
+                   "backgroundImage": "blue.png",
+                   "userImage": "shane.png"
+                   },
+                   {
+                   "id": "2",
+                   "imageURL": "heart.png",
                    "name": "Sally Sunshine",
                    "type": "Health",
-                   "backgroundImage": "blueGradient.png"
-                   },
-                   {
-                   "id": "3",
-                   "imageURL": "car.png",
-                   "type": "Auto",
-                   "backgroundImage": "orangeGradient.png"
-                   },
-                   {
-                   "id": "3",
-                   "imageURL": "car.png",
-                   "type": "Auto",
-                   "backgroundImage": "orangeGradient.png"
+                   "backgroundImage": "blue.png",
+                   "userImage": "sally.png"
                    },
                    {
                    "id": "4",
                    "imageURL": "tooth.png",
+                   "name": "Suzy Sunshine",
                    "type": "Dental",
-                   "backgroundImage": "purpleGradient.png"
+                   "backgroundImage": "purple.png",
+                   "userImage": "suzy.png"
+                   },
+                   {
+                   "id": "4",
+                   "imageURL": "tooth.png",
+                   "name": "Sam Sunshine",
+                   "type": "Dental",
+                   "backgroundImage": "purple.png",
+                   "userImage": "sam.png"
+                   },
+                   {
+                   "id": "4",
+                   "imageURL": "tooth.png",
+                   "name": "Sean Sunshine",
+                   "type": "Dental",
+                   "backgroundImage": "purple.png",
+                   "userImage": "sean.png"
+                   },
+                   {
+                   "id": "4",
+                   "imageURL": "tooth.png",
+                   "name": "Sally Sunshine",
+                   "type": "Dental",
+                   "backgroundImage": "purple.png",
+                   "userImage": "sally.png"
                    },
                    {
                    "id": "5",
                    "imageURL": "eye.png",
+                   "name": "Suzy Sunshine",
                    "type": "Vision",
-                   "backgroundImage": "greenGradient.png"
+                   "backgroundImage": "green.png",
+                   "userImage": "suzy.png"
                    },
+                   {
+                   "id": "5",
+                   "imageURL": "eye.png",
+                   "name": "Sally Sunshine",
+                   "type": "Vision",
+                   "backgroundImage": "green.png",
+                   "userImage": "sally.png"
+                   },
+                   {
+                   "id": "5",
+                   "imageURL": "eye.png",
+                   "name": "Sean Sunshine",
+                   "type": "Vision",
+                   "backgroundImage": "green.png",
+                   "userImage": "sean.png"
+                   },
+                   
                    {
                    "id": "6",
                    "imageURL": "house.png",
+                   "name": "1 Infinite Loop",
                    "type": "Home",
-                   "backgroundImage": "yellowGradient.png"
+                   "backgroundImage": "lightBlue.png"
                    },
                    {
                    "id": "16",
                    "imageURL": "lifeSaver.png",
                    "type": "Life",
-                   "backgroundImage": "redGradient.png"
-                   }
+                   "backgroundImage": "red.png"
+                   },
+                   {
+                   "id": "3",
+                   "imageURL": "car.png",
+                   "name": "1983 DeLorean",
+                   "type": "Auto",
+                   "backgroundImage": "orange.png"
+                   },
+                   {
+                   "id": "3",
+                   "imageURL": "car.png",
+                   "name": "1956 Super DeLuxe",
+                   "type": "Auto",
+                   "backgroundImage": "orange.png"
+                   },
+
                    ]
 }

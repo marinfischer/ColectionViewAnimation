@@ -14,5 +14,6 @@
 @property (strong, nonatomic) NSString *id;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *backgroundImage;
+@property (strong, nonatomic) NSString *userImage;
 
 @end

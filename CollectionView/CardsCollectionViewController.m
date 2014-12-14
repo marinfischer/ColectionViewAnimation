@@ -11,6 +11,7 @@
 #import "InsurancesDataStore.h"
 #import "LWInsurancesModel.h"
 #import "LWCardDetailsCollectionViewController.h"
+#import "Theme.h"
 
 @interface CardsCollectionViewController ()
 @property (nonatomic, strong) NSDictionary *categories;
@@ -117,11 +118,30 @@ static NSString * const reuseIdentifier = @"Cell";
     // Configure the cell
     NSArray *group = self.allCardItems[indexPath.section];
     LWInsurancesModel *card = group[indexPath.item];
+
     [cardCell.imageView setImage:[UIImage imageNamed:card.imageURL]];
-    [cardCell.backgroundImageView setImage:[UIImage imageNamed:card.backgroundImage]];
-    [cardCell.backgroundImageView setClipsToBounds:true];
+//    [cardCell.backgroundImageView setImage:[UIImage imageNamed:card.backgroundImage]];
+//    [cardCell.backgroundImageView setClipsToBounds:true];
     [cardCell.insTypeName setText:card.type];
     [cardCell.insTypeName setTextColor:[UIColor whiteColor]];
+    if ([card.type isEqualToString:@"Health"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] blue]];
+        
+    }else if ([card.type isEqualToString:@"Vision"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] mintGreen]];
+
+    }else if ([card.type isEqualToString:@"Dental"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] yellow]];
+
+    }else if ([card.type isEqualToString:@"Auto"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] orange]];
+
+    }else if ([card.type isEqualToString:@"Life"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] red]];
+
+    }else if ([card.type isEqualToString:@"Home"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] purple]];
+    }
     
     return cardCell;
 }
@@ -157,7 +177,7 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     // we could have multiple section stacks, so we need to find the right one
     UICollectionViewFlowLayout *cardDetailsGrid = [[UICollectionViewFlowLayout alloc] init];
-    cardDetailsGrid.itemSize = CGSizeMake(130.0f, 110.0f);
+    cardDetailsGrid.itemSize = CGSizeMake(90.0f, 70.0f);
     cardDetailsGrid.sectionInset = UIEdgeInsetsMake(22.0f, 22.0f, 13.0f, 22.0f);
     
     LWCardDetailsCollectionViewController *nextCollectionViewController =
@@ -208,7 +228,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     //get the opposite orientation you want since thise gives you what its currently at before rotation completes
     if (UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
-        self.cardLayoutView.numberOfColumns = 3;
+        self.cardLayoutView.numberOfColumns = 6;
         
         // handle insets for iPhone 4 or 5
         CGFloat sideInset = [UIScreen mainScreen].preferredMode.size.width == 1136.0f ?
@@ -217,7 +237,7 @@ static NSString * const reuseIdentifier = @"Cell";
         self.cardLayoutView.itemInsets = UIEdgeInsetsMake(22.0f, sideInset, 13.0f, sideInset);
         
     } else {
-        self.cardLayoutView.numberOfColumns = 2;
+        self.cardLayoutView.numberOfColumns = 3;
         self.cardLayoutView.itemInsets = UIEdgeInsetsMake(22.0f, 22.0f, 13.0f, 22.0f);
     }
 }

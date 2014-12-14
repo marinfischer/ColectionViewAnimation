@@ -36,7 +36,7 @@
         self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
         self.backgroundImageView.clipsToBounds = YES;
 
-        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.origin.x + 30.0f, self.bounds.origin.y +15.0f, self.bounds.size.width - 60.0f, self.bounds.size.height - 50.0f)];
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.origin.x + 20.0f, self.bounds.origin.y +10.0f, self.bounds.size.width - 40.0f, self.bounds.size.height - 30.0f)];
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         self.imageView.clipsToBounds = YES;
         
@@ -58,6 +58,7 @@
     
     self.imageView.image = nil;
     self.insTypeName.text = nil;
+    self.backgroundColor = nil;
 }
 
 @end

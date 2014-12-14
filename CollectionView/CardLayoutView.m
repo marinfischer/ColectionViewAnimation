@@ -46,9 +46,9 @@ NSString * const CardLayoutInsuranceTypeKind = @"CategoryTitle";
 - (void)setup
 {
     self.itemInsets = UIEdgeInsetsMake(22.0f, 22.0f, 13.0f, 22.0f);
-    self.itemSize = CGSizeMake(130.0f, 110.0f);
+    self.itemSize = CGSizeMake(90.0f, 70.0f);
     self.interItemSpacingY = 12.0f;
-    self.numberOfColumns = 2;
+    self.numberOfColumns = 3;
     self.titleHeight = 26.0f;
     
     // create rotations at load so that they are consistent during prepareLayout

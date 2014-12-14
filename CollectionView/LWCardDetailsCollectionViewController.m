@@ -5,10 +5,15 @@
 //  Created by Marin Fischer on 12/10/14.
 //  Copyright (c) 2014 TheCodeBoutique. All rights reserved.
 //
+//use uidynamics for bounce affect
+//on master do fade in and fade out. when you hit back call fade in- run a dispatch after and set in at .1 or .2 then do fade
+//
 
 #import "LWCardDetailsCollectionViewController.h"
 #import "CardCollectionViewCell.h"
 #import "LWInsurancesModel.h"
+#import "Theme.h"
+
 static NSString * const reuseIdentifier = @"Cell";
 @interface LWCardDetailsCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -68,11 +73,31 @@ static NSString * const reuseIdentifier = @"Cell";
     // Configure the cell
     // Configure the cell
     LWInsurancesModel *card = self.data[indexPath.item];
-    [cardCell.imageView setImage:[UIImage imageNamed:card.imageURL]];
-    [cardCell.backgroundImageView setImage:[UIImage imageNamed:card.backgroundImage]];
-    [cardCell.backgroundImageView setClipsToBounds:true];
+    [cardCell setBackgroundColor:[[Theme sharedTheme] mintGreen]];
+    [cardCell.imageView setImage:[UIImage imageNamed:card.userImage]];
+//    [cardCell.backgroundImageView setImage:[UIImage imageNamed:card.backgroundImage]];
+//    [cardCell.backgroundImageView setClipsToBounds:true];
     [cardCell.insTypeName setText:card.name];
     [cardCell.insTypeName setTextColor:[UIColor whiteColor]];
+    if ([card.type isEqualToString:@"Health"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] blue]];
+        
+    }else if ([card.type isEqualToString:@"Vision"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] mintGreen]];
+        
+    }else if ([card.type isEqualToString:@"Dental"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] yellow]];
+        
+    }else if ([card.type isEqualToString:@"Auto"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] orange]];
+        
+    }else if ([card.type isEqualToString:@"Life"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] red]];
+        
+    }else if ([card.type isEqualToString:@"Home"]) {
+        [cardCell setBackgroundColor:[[Theme sharedTheme] purple]];
+    }
+
     
     return cardCell;
 }
@@ -111,6 +136,7 @@ static NSString * const reuseIdentifier = @"Cell";
 -(void) viewWillDisappear:(BOOL)animated {
     if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
         // Navigation button was pressed. Do some stuff
+        //check in view will disappear check view controller and check the view controller if its going back to master do transition (in a block) if not mast than push the new
         [self.previousViewControllerReference setCardLayoutView:self.cardLayoutView];
             CATransition* transition = [CATransition animation];
         
